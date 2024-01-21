@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto+Mono:wght@300&display=swap');
+:root{
+    --primary-color : #DA7407;
+    --secondary-color : #CBE2DB;
+    --accent1-color : #53917E;
+    --accent2-color : #AB9BA4;
+    --heading-font : 'Oswald',sans serif;
+    --paragraph-font : 'Roboto Mono',sans serif;
+    --nav-background-color : #DA7407;
+    --nav-link-color : #B1B695;
+    --nav-hover-link-color : #CBE2DB;
+    --nav-hover-background-color :  #AB9BA4;
+}
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+header {
+    padding: 20px; 
+    background-color: #CBE2DB;
+}
+p {
+    padding : 25px;
+    }
+    nav {
+        background-color : #B1B695;
+        font-size : 1.2rem;
+        display : flex;
+        }
+        nav a {
+        display : block;
+        color : var(--nav-link-color);
+        text-decoration : none;
+        padding : 1rem;
+        }
+        nav a:link, nav a:visited {
+        color : var(--nav-link-color);
+        }
+        nav a:hover {
+        color : var(--nav-hover-link-color);
+        background-color :  #AB9BA4;;
+        }
