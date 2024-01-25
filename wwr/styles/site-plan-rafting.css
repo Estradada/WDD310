@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Fjalla+One&family=Open+Sans:ital@1&display=swap');
+
+
 :root{
-    --primary-color : #DA7407;
+    --primary-color :#070D0B;
     --secondary-color : #CBE2DB;
     --accent1-color : #53917E;
     --accent2-color : #AB9BA4;
-    --heading-font : 'Oswald',sans serif;
-    --paragraph-font : 'Roboto Mono',sans serif;
-    --nav-background-color : #DA7407;
-    --nav-link-color : #B1B695;
-    --nav-hover-link-color : #CBE2DB;
+    --heading-font : 'Fjalla One',sans serif;
+    --paragraph-font : 'Open Sans',sans serif;
+    --nav-background-color :#0A0A0A;
+    --nav-link-color : #DFE2E1;
+    --nav-hover-link-color:#CBE2DB;
     --nav-hover-background-color :  #AB9BA4;
 }
 body {
@@ -22,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 header {
     padding: 20px; 
-    background-color: #CBE2DB;
+    background-color:#CBE2DB ;
 }
 p {
     padding : 25px;
