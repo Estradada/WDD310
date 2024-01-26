@@ -113,6 +113,8 @@ section img {
     text-align: left;
     background: rgba(255, 255, 255, 0.7);
     padding: 15px;
+    height: 15rem;
+    width: 80rem;
 }
 
 .hero article img {
@@ -120,6 +122,8 @@ section img {
     height: auto;
     float: right;
     margin-right: 15px;
+    position: relative;
+    top: 15px; 
 }
 
 .hero article p {
