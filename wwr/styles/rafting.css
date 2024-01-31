@@ -1,34 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Fjalla+One&family=Open+Sans:ital@1&display=swap');
 
 
-:root{
+:root {
     --primary-color: #070D0B;
     --secondary-color: #CBE2DB;
     --accent1-color: #DFE2E1;
     --accent2-color: #AB9BA4;
-    --heading-font : 'Fjalla One',sans serif;
-    --paragraph-font : 'Open Sans',sans serif;
-    --nav-background-color :#53917E;
-    --nav-link-color :#0A0A0A;
-    --nav-hover-link-color:#53917E;
-    --nav-hover-background-color:#DFE2E1 ;
+    --heading-font: 'Fjalla One', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+    --nav-background-color: #070D0B;
+    --nav-link-color: #0A0A0A;
+    --nav-hover-link-color: #53917E;
+    --nav-hover-background-color: #DFE2E1;
 }
 
 * {
     box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-    }
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: #DFE2E1;
-}    
+}
 
 /* Heading Styles */
 h2 {
     font-family: var(--heading-font);
     color: #0A0A0A;
     margin: 15px;
+    text-align: center; 
 }
 
 /* Paragraph Styles */
@@ -40,47 +41,44 @@ p {
     padding: 20px;
 }
 
-/* Header Styles */
-header {
+.nav-bar {
     background-color: #CBE2DB;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    height: 100px;
-    padding: 5px 10px;
+    height: 6rem;
+
 }
 
-header a {
-    display: inline-block;
-    padding: 0 20px;
+.nav-bar img {
+    height: 5rem;
+    width: auto;
+    grid-column: 1/5;
+    justify-self: start;
+    margin-left: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 2rem;
+
+
+}
+
+.nav-links a {
+    background-color: aliceblue;
+    padding: 8px;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     color: #070D0B;
-    font-size: 700;
-    color: var(--nav-link-color);
-    transition: color 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold; 
 }
 
-header a:hover {
+.nav-links a:hover {
     color: var(--nav-hover-link-color);
-}
-
-header img {
-    height: 90px;
-    width: 120px;
-}
-
-/* Section Styles */
-section {
-    text-align: center;
-}
-
-section img {
-    display: inline-block;
-    margin: 0 5px;
-    width: auto;
-    height: 150px;
-    opacity: 0.8;
 }
 
 /* Hero Section Styles */
@@ -90,15 +88,15 @@ section img {
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 20rem;
     opacity: 0.8;
 }
 
 .hero h1 {
     font-family: var(--heading-font);
-    color: white;
+    color: black;
     margin: 0;
-    padding: 20px;
+    padding-top: 1rem;
     position: absolute;
     top: 7%;
     left: 50%;
@@ -123,25 +121,73 @@ section img {
     float: right;
     margin-right: 15px;
     position: relative;
-    top: 15px; 
+    top: 15px;
 }
 
-.hero article p {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: #0A0A0A;
+/* History Section Styles */
+.history-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; 
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left-column,
+.middle-column,
+.right-column {
+    width: 33%;
+    padding: 0 10px;
+}
+
+.middle-column img {
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Adventure Section Styles */
+.adventure-section {
+    margin-top: 50px;
+}
+
+.adventure-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+
+.adventure-images img {
+    width: 200px;
+    height: 150px;
+}
+
+.adventure-images figcaption {
+    text-align: center;
+    margin: 10px;
+    font-size: 0.9em;
+    font-family: 'Open Sans', sans-serif; /* Added font-family */
 }
 
 /* Footer Styles */
 footer {
-    position: relative;
     background-color: #CBE2DB;
-    padding: 1px;
+    padding: 10px;
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
 
-.social-all-links {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.footer-content p {
+    margin: 0;
 }
