@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="contact information and a contact form">
+    <meta name="author" content="Daniela Estrada">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+
+    <header class="nav-bar">
+        <img src="images/logeimage.png" alt="logo for the rafting site">
+        <nav class="nav-links">
+            <a href="Index.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="Contact.html">Contact Us</a>
+        </nav>
+    </header>
+        
+    <main>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h1>Contact Info</h1>
+                <div class="contact-details">
+                    <h2>Address:</h2>
+                    <p>123 Main St, City, Country</p>
+                    <h2>Phone:</h2>
+                    <p>+123 455 783</p>
+                    <p>+123 455 783</p>
+                    <h2>Email:</h2> 
+                    <p>Rapidsteam@gmail.com</p>
+                </div>
+                <div class="map">
+                    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2814.085728329405!2d-113.90051392392706!3d45.14485975468928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358369e194f3415%3A0x4514d1beebbf2bc5!2s16%20N%20Cherokee%20Rd%2C%20Salmon%2C%20ID%2083467%2C%20USA!5e0!3m2!1sen!2sco!4v1707101282066!5m2!1sen!2sco" width="400" height="280px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h1>Contact Form</h1>
+                <form>
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="purpose">Purpose of Message:</label>
+                    <select id="purpose" name="purpose">
+                        <option value="general">General Inquiry</option>
+                        <option value="Reservation">Reservation Question</option>
+                        <option value="website">Website Suggestion</option>
+                    </select>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    
+                    <label for="subscribe">Subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" id="subscribe" name="subscribe" checked>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="profiles-container">
+                <figure class="profile">
+                    <img src="images/happyemployees1.jpg" alt="Employee 1">
+                    <figcaption>John and Rick - Rafting Guide</figcaption>
+                </figure>
+                <figure class="profile">
+                    <img src="images/happyemployees2.jpg" alt="Employee 2">
+                    <figcaption>Jane Smith - Safety Officer</figcaption>
+                </figure>
+                <figure class="profile">
+                    <img src="images/happyemplyees3.jpg" alt="Employee 3">
+                    <figcaption>Mike Johnson - Booking Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+        
+    <footer>
+        <div class="footer-content">
+            <p>© | 2024 | Rapids | Daniela Estrada</p>
+            <nav class="social-all-links">
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebookicon.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/i/flow/login">
+                    <img src="images/twittericon.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagramicon.png" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+    </footer>
+        
+</body>
+</html>
