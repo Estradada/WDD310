@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Fjalla+One&family=Open+Sans:ital@1&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+.nav-bar {
+    background-color: #CBE2DB;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    height: 6rem;
+
+}
+
+.nav-bar img {
+    height: 5rem;
+    width: auto;
+    grid-column: 1/5;
+    justify-self: start;
+    margin-left: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 2rem;
+
+
+}
+
+.nav-links a {
+    background-color: aliceblue;
+    padding: 8px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #070D0B;
+    font-size: 1rem;
+    font-weight: bold; 
+}
+
+.nav-links a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+footer {
+    background-color: #CBE2DB;
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.footer-content p {
+    margin: 0;
+}

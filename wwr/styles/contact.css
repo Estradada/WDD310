@@ -64,14 +64,14 @@ footer {
 }
 
 
-/* css design */
+/* css design for contact us */
 
 
 
 
 
 
-/* Estilos para la sección de contacto */
+
 .contact-section {
     display: flex;
     justify-content: space-between;
@@ -80,8 +80,8 @@ footer {
 }
 
 .contact-info {
-    width: 50%; /* 45% del ancho de la sección */
-    background-color:#CBE2DB ; /* Fondo blanco */
+    width: 50%; 
+    background-color:#CBE2DB ; 
     padding: 20px;
     
 }
@@ -127,7 +127,6 @@ footer {
 }
 
 
-/* Contact form style */
 .contact-form label {
   font-family: 'Open Sans', sans-serif;
 }
@@ -168,7 +167,7 @@ footer {
 
 
 
-/* Estilos para la sección de perfiles de empleados */
+
 .employee-profiles {
     text-align: center;
     padding: 20px;
