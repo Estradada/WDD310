@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Fjalla+One&family=Open+Sans:ital@1&display=swap');
+
+
+:root{
+    --primary-color :#070D0B;
+    --secondary-color : #CBE2DB;
+    --accent1-color : #53917E;
+    --accent2-color : #AB9BA4;
+    --heading-font : 'Fjalla One',sans serif;
+    --paragraph-font : 'Open Sans',sans serif;
+    --nav-background-color :#0A0A0A;
+    --nav-link-color : #DFE2E1;
+    --nav-hover-link-color:#CBE2DB;
+    --nav-hover-background-color :  #AB9BA4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #DFE2E1;
+}
+
+
+.nav-bar {
+    background-color: #CBE2DB;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    height: 6rem;
+
+}
+
+.nav-bar img {
+    height: 5rem;
+    width: auto;
+    grid-column: 1/5;
+    justify-self: start;
+    margin-left: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 2rem;
+
+
+}
+
+.nav-links a {
+    background-color: aliceblue;
+    padding: 8px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #070D0B;
+    font-size: 1rem;
+    font-weight: bold; 
+}
+
+.nav-links a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+footer {
+    background-color: #CBE2DB;
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+
+
+
+.newsletter {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.newsletter h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family:'Fjalla One', sans-serif;
+}
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #070D0B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.newsletter button:hover {
+    background-color: #53917E;
+}
+
+
+.cta {
+    background-color: #53917E;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    font-family:'Fjalla One', sans-serif;
+}
+
+.cta p {
+    margin: 20px 0;
+    font-family:'Open Sans', sans-serif;
+}
+
+.cta .btn {
+    padding: 12px 24px;
+    background-color: #070D0B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size:'Open Sans', sans-serif;
+}
+
+.cta .btn:hover {
+    background-color: #53917E;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin: 50px auto;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.grid-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.grid-item h3 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-family:'Fjalla One', sans-serif ;
+
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-family:'Open Sans', sans-serif;
+}
+
+
+.home-image img {
+    width: 100%;
+    height:300px ;
+}
